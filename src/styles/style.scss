@@ -2,6 +2,13 @@
 @import 'responsive';
 @import 'variables';
 @import 'header';
+@import 'footer';
+
+body {
+    font-size: 1rem;
+    line-height: 26px;
+    color: $blue;
+}
 
 .container {
     font-family: 'Barlow', sans-serif;
