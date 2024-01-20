@@ -1,0 +1,30 @@
+@import "variables";
+
+header {
+    position: sticky;
+    z-index: 1;
+    backdrop-filter: blur(1.25rem);
+    left: 0;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: var(--padding-block);
+    --padding-block: 23px;
+    --header-height: 104px;
+
+    transition: padding .1s ease-in-out;
+
+    @media only screen and (min-width: 768px) {
+        --header-height: 138px;
+        --padding-block: 40px;
+    }
+
+    @media only screen and (min-width: 1140px) {
+        --header-height: 168px;
+        --padding-block: 55px;
+    }
+}
