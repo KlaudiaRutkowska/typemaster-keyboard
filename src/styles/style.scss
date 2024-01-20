@@ -2,6 +2,7 @@
 @import 'responsive';
 @import 'variables';
 @import 'header';
+@import 'functionalities';
 @import 'footer';
 
 body {
@@ -12,6 +13,14 @@ body {
 
 .container {
     font-family: 'Barlow', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: $navy-blue;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 button {
