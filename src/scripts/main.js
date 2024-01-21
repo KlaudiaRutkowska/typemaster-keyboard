@@ -1,4 +1,5 @@
 import '../styles/style.scss'
+import './receiveFunctionalitiesData.js'
 
 const header = document.querySelector('header')
 

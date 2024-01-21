@@ -38,15 +38,15 @@
             }
 
             & > h3 {
-                padding-top: 3rem;
-                padding-bottom: 1.5rem;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
 
                 @media only screen and (min-width: 768px) {
-                    padding-top: 2.5rem;
+                    margin-top: 2.5rem;
                 }
 
                 @media only screen and (min-width: 1140px) {
-                    padding-top: 3rem;
+                    margin-top: 3rem;
                 }
             }
 
