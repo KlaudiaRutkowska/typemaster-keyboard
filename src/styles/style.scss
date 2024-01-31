@@ -2,6 +2,7 @@
 @import 'responsive';
 @import 'variables';
 @import 'header';
+@import '_hero';
 @import 'functionalities';
 @import 'footer';
 
@@ -15,12 +16,26 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+h1,
 h3 {
-    font-size: 24px;
-    line-height: 28px;
     color: $navy-blue;
     font-weight: 900;
     text-transform: uppercase;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+
+    @media only screen and (min-width: 1440px) {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
 }
 
 button {
@@ -50,12 +65,21 @@ button {
         padding-inline: 26px;
         padding-block: 16px;
     }
+
+    &.orange {
+        color: white;
+        background-color: $orange;
+
+        &:hover {
+            background-color: $light-orange;
+        }
+    }
 }
 
 .skeleton {
-    opacity: .7;
+    opacity: 0.7;
     animation: skeleton-loading 1s linear infinite alternate;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
 
     &.skeleton-icon {
         width: 4.0625rem;
