@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'header';
 @import '_hero';
+@import 'about';
 @import 'functionalities';
 @import 'footer';
 
@@ -17,6 +18,7 @@ body {
 }
 
 h1,
+h2,
 h3 {
     color: $navy-blue;
     font-weight: 900;
@@ -31,6 +33,11 @@ h1 {
         font-size: 56px;
         line-height: 56px;
     }
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
 }
 
 h3 {
