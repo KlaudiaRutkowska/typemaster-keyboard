@@ -3,7 +3,8 @@
 header {
     position: sticky;
     z-index: 1;
-    backdrop-filter: blur(1.25rem);
+    //backdrop-filter: blur(1.25rem);
+    background-color: white;
     left: 0;
     right: 0;
     top: 0;
@@ -28,6 +29,7 @@ header {
     }
 
     &.scrolled {
+        box-shadow: $light-blue 0 .125rem .5rem;
         padding-block: 7px;
     
         @media only screen and (min-width: 768px) {
