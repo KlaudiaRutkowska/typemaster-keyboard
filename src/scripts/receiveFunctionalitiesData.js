@@ -15,6 +15,19 @@ heroQuery.forEach((doc) => {
     p.innerHTML = doc.data().description
 })
 
+//about
+const aboutQuery = await getDocs(collection(db, 'about'))
+const h2 = document.querySelector('#about > div.container > .text-wrapper > h2')
+const paragraph = document.querySelector('#about > div.container > .text-wrapper > p')
+
+aboutQuery.forEach((doc) => {
+    h2.classList.remove('skeleton', 'skeleton-title')
+    h2.innerHTML = doc.data().title
+
+    paragraph.classList.remove('skeleton', 'skeleton-text')
+    paragraph.innerHTML = doc.data().description
+})
+
 //functionalities
 const query = await getDocs(collection(db, 'functionalities'))
 
