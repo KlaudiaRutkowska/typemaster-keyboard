@@ -4,9 +4,162 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap"
+            rel="stylesheet"
+        />
         <script type="module" src="scripts/main.js" defer></script>
         <title>Typemaster keyboard</title>
     </head>
     <body>
+        <header class="container">
+            <a href="#0" class="logo">
+                <img src="images/logo.svg" alt="Graphic of logo" />
+            </a>
+
+            <button>Pre-order now</button>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="container">
+                    <div class="text-wrapper">
+                        <h1>Typemaster keyboard</h1>
+                        <p>
+                            Improve your productivity and gaming without
+                            breaking the bank Upgrade to a high quality
+                            mechanical typing experience.
+                        </p>
+
+                        <div>
+                            <button class="orange">pre-order now</button>
+                            <p>release on 5/27</p>
+                        </div>
+                    </div>
+
+                    <picture>
+                        <source
+                            media="(max-width: 767px)"
+                            srcset="images/image-keyboard-mobile.jpg"
+                        />
+                        <source
+                            media="(max-width: 1439px)"
+                            srcset="images/image-keyboard-tablet.jpg"
+                        />
+                        <source srcset="images/image-keyboard-desktop.jpg" />
+                        <img
+                            src="images/image-keyboard-desktop.jpg"
+                            alt="Image of keyboard"
+                        />
+                    </picture>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <div class="pictures-container">
+                        <div class="picture-container">
+                            <picture>
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        images/image-phone-and-keyboard-mobile.jpg
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 1439px)"
+                                    srcset="
+                                        images/image-phone-and-keyboard-tablet.jpg
+                                    "
+                                />
+                                <source
+                                    srcset="
+                                        images/image-phone-and-keyboard-desktop.jpg
+                                    "
+                                />
+                                <img
+                                    src="images/image-phone-and-keyboard-desktop.jpg"
+                                    alt="Image of phone and keyboard"
+                                />
+                            </picture>
+                        </div>
+
+                        <picture>
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="
+                                    images/image-glass-and-keyboard-mobile.jpg
+                                "
+                            />
+                            <source
+                                media="(max-width: 1439px)"
+                                srcset="
+                                    images/image-glass-and-keyboard-tablet.jpg
+                                "
+                            />
+                            <source
+                                srcset="
+                                    images/image-glass-and-keyboard-desktop.jpg
+                                "
+                            />
+                            <img
+                                src="images/image-glass-and-keyboard-desktop.jpg"
+                                alt="Image of glass and keyboard"
+                            />
+                        </picture>
+                    </div>
+
+                    <div class="text-wrapper">
+                        <h2>mechanical wireless keyboard</h2>
+                        <p>
+                            The Typemaster keyboard boasts top-notch build and
+                            practical design. It offers a wide variety of
+                            switches and keycaps, along with reliable wireless
+                            connectivity.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="functionalities">
+                <div class="container">
+                    <div class="element">
+                        <div class="skeleton skeleton-icon"></div>
+                        <h3 class="skeleton skeleton-title"></h3>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                    </div>
+                    <div class="element">
+                        <div class="skeleton skeleton-icon"></div>
+                        <h3 class="skeleton skeleton-title"></h3>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                    </div>
+                    <div class="element">
+                        <div class="skeleton skeleton-icon"></div>
+                        <h3 class="skeleton skeleton-title"></h3>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                    </div>
+                    <div class="element">
+                        <div class="skeleton skeleton-icon"></div>
+                        <h3 class="skeleton skeleton-title"></h3>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                        <p class="skeleton skeleton-text"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><span>Typemaster 2024</span> | All Rights Reserved</p>
+        </footer>
     </body>
 </html>

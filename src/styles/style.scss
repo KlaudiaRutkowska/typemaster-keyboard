@@ -1,1 +1,122 @@
 @import 'reset-css';
+@import 'responsive';
+@import 'variables';
+@import 'header';
+@import '_hero';
+@import 'about';
+@import 'functionalities';
+@import 'footer';
+
+body {
+    font-size: 1rem;
+    line-height: 26px;
+    color: $blue;
+}
+
+.container {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: $navy-blue;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+
+    @media only screen and (min-width: 1440px) {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+button {
+    cursor: pointer;
+    background-color: $light-blue;
+    color: $navy-blue;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    padding-inline: 14px;
+    padding-block: 11px;
+    border-width: 0;
+    border-radius: 8px;
+
+    transition: color background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+        background-color: $navy-blue;
+        color: white;
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding-inline: 26px;
+        padding-block: 16px;
+    }
+
+    &.orange {
+        color: white;
+        background-color: $orange;
+
+        &:hover {
+            background-color: $light-orange;
+        }
+    }
+}
+
+.skeleton {
+    opacity: 0.7;
+    animation: skeleton-loading 1s linear infinite alternate;
+    border-radius: 0.2rem;
+
+    &.skeleton-icon {
+        width: 4.0625rem;
+        height: 4.0625rem;
+        border-radius: 1rem;
+    }
+
+    &.skeleton-title {
+        width: 70%;
+        height: 56px;
+    }
+
+    &.skeleton-text {
+        width: 100%;
+        height: 1.125rem;
+        margin-bottom: 0.25rem;
+
+        &:last-child {
+            margin-bottom: 0;
+            width: 70%;
+        }
+    }
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: $light-blue;
+    }
+
+    100% {
+        background-color: $blue;
+    }
+}
