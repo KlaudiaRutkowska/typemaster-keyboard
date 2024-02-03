@@ -3,6 +3,7 @@ export default {
     base: "/typemaster-keyboard",
     publicDir: '../public',
     build: {
+        target: 'esnext',
         outDir: '../dist'
     }
 }
