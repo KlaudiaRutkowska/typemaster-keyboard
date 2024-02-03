@@ -1,7 +1,21 @@
 import { collection, getDocs } from 'firebase/firestore'
-
 import db from './firebase.js'
 
+
+//hero
+const heroQuery = await getDocs(collection(db, 'hero'))
+const h1 = document.querySelector('#hero > div.container > .text-wrapper > h1')
+const p = document.querySelector('#hero > div.container > .text-wrapper > p')
+
+heroQuery.forEach((doc) => {
+    h1.classList.remove('skeleton', 'skeleton-title')
+    h1.innerHTML = doc.data().title
+
+    p.classList.remove('skeleton', 'skeleton-text')
+    p.innerHTML = doc.data().description
+})
+
+//functionalities
 const query = await getDocs(collection(db, 'functionalities'))
 
 const elementsContainer = document.querySelector(
